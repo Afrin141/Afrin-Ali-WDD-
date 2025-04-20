@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page - ALI Enterprise</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">ALI Enterprise</div>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="Order.html">Orders</a></li>
+                <li><a href="product.php">Products</a></li>
+                <li><a href="Track Order.html">Track Order</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="order-details">
+            <h2>Your Order Details</h2>
+
+            <!-- Order Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Order Name</th>
+                        <th>Order Number</th>
+                        <th>Quantity</th>
+                        <th>Order Price (Rs.)</th>
+                        <th>Track Order</th>
+                    </tr>
+                </thead>
+                <tbody id="order-list">
+                    <!-- Example Order Row -->
+                    <tr>
+                        <td><img src="Img/saftey.jpg" alt="Safety Goggles"></td> 
+                        <td>Safety Goggles</td>
+                        <td>#001234</td>
+                        <td>2</td>
+                        <td>Rs.4120.00/-</td>
+                        <td><button onclick="trackOrder('#001234')">Track Order</button></td>
+                    </tr>
+
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td><img src="Img/screwdriverset.webp" alt="Screwdriver Set"></td> 
+                        <td>Screwdriver Set</td>
+                        <td>#001235</td>
+                        <td>1</td>
+                        <td>Rs.2950.00/-</td>
+                        <td><button onclick="trackOrder('#001235')">Track Order</button></td>
+                    </tr>
+
+                    <!-- Example Row -->
+                    <tr>
+                        <td><img src="Img/piler.webp" alt="Pliers Set"></td> 
+                        <td>Pliers Set</td>
+                        <td>#001236</td>
+                        <td>3</td>
+                        <td>Rs.10620.00/-</td>
+                        <td><button onclick="trackOrder('#001236')">Track Order</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Summary Section -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Total Amount: Rs.17790.00/-</p> 
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 ALI Enterprise. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Order.js"></script>
+
+</body>
+
+</html>
